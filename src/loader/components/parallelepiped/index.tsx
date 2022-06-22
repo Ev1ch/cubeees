@@ -14,6 +14,7 @@ interface ParallelepipedProps {
   y?: number;
   z?: number;
   color?: string;
+  border?: string;
   style?: CSSProperties;
   top?: ReactNode;
 }
@@ -26,6 +27,7 @@ const Parallelepiped = ({
   y,
   z,
   color,
+  border,
   top,
   style,
   className,
@@ -50,6 +52,7 @@ const Parallelepiped = ({
         style={{
           transform: `translateZ(${getInUnits(length / 2)})`,
           backgroundColor: color,
+          border,
         }}
       ></div>
       <div
@@ -60,6 +63,7 @@ const Parallelepiped = ({
         style={{
           transform: `rotateY(-90deg) translateZ(${getInUnits(width / 2)})`,
           backgroundColor: color,
+          border,
         }}
       ></div>
       <div
@@ -70,6 +74,7 @@ const Parallelepiped = ({
         style={{
           transform: `rotateY(90deg) translateZ(${getInUnits(width / 2)})`,
           backgroundColor: color,
+          border,
         }}
       ></div>
       <div
@@ -80,6 +85,7 @@ const Parallelepiped = ({
         style={{
           transform: `translateZ(-${getInUnits(length / 2)})`,
           backgroundColor: color,
+          border,
         }}
       ></div>
       <div
@@ -90,6 +96,7 @@ const Parallelepiped = ({
         style={{
           transform: `rotateX(90deg) translateZ(${getInUnits(height / 2)})`,
           backgroundColor: color,
+          border,
         }}
       >
         {top}
@@ -102,6 +109,7 @@ const Parallelepiped = ({
         style={{
           transform: `rotateX(-90deg) translateZ(${getInUnits(height / 2)})`,
           backgroundColor: color,
+          border,
         }}
       ></div>
     </div>

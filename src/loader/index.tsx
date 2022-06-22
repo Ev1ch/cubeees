@@ -60,6 +60,7 @@ const Loader = () => {
                 </div>
               }
               color="blue"
+              border="1px solid darkblue"
               className={styles.loader__cube}
               style={
                 {
