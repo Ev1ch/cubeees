@@ -1,6 +1,7 @@
 import React from 'react';
-import './App.css';
+
 import Loader from './loader';
+import './styles/index.scss';
 
 function App() {
   return (
