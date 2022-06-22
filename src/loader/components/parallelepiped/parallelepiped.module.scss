@@ -1,0 +1,10 @@
+.parallelepiped {
+  position: relative;
+  transform-style: preserve-3d;
+
+  &__side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
